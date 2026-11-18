@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" fill="none">
+  <defs>
+    <linearGradient id="bgWallet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A1A" />
+      <stop offset="100%" stop-color="#121010" />
+    </linearGradient>
+    <linearGradient id="balanceCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C6283D" />
+      <stop offset="100%" stop-color="#690A1B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="760" rx="32" fill="url(#bgWallet)" />
+
+  <!-- Status Bar -->
+  <g fill="#A0A0AB" font-family="'Inter'" font-size="11" font-weight="600">
+    <text x="28" y="24">18:30</text>
+    <circle cx="288" cy="20" r="3" fill="#A0A0AB"/>
+    <path d="M302 16 L310 24 H294 Z" fill="#A0A0AB"/>
+    <rect x="318" y="14" width="16" height="9" rx="2" stroke="#A0A0AB" stroke-width="1.5"/>
+    <rect x="320" y="16" width="10" height="5" fill="#C6283D"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 44)">
+    <text x="0" y="24" font-family="'Sora'" font-weight="800" font-size="20" fill="#FFFFFF">Virtual Coin Hub</text>
+    <text x="0" y="42" font-family="'Inter'" font-size="11" fill="#888898">In-app digital tokens &amp; milestones</text>
+  </g>
+
+  <!-- Balance Card -->
+  <g transform="translate(20, 96)">
+    <rect width="320" height="150" rx="16" fill="url(#balanceCardGrad)"/>
+    <circle cx="280" cy="40" r="50" fill="#FF4D64" opacity="0.25"/>
+    
+    <text x="20" y="32" font-family="'Inter'" font-weight="700" font-size="10" fill="#FFA3AF" letter-spacing="1">VIRTUAL BALANCE</text>
+    
+    <!-- Balance amount -->
+    <g transform="translate(20, 68)">
+      <circle cx="16" cy="-8" r="14" fill="#FFB300"/>
+      <text x="16" y="-3" font-family="'Sora'" font-weight="900" font-size="14" fill="#1A1A1A" text-anchor="middle">K</text>
+      <text x="40" y="0" font-family="'Sora'" font-weight="800" font-size="32" fill="#FFFFFF">2,450</text>
+      <text x="146" y="-4" font-family="'Inter'" font-weight="800" font-size="14" fill="#FFE082">KC</text>
+    </g>
+
+    <text x="20" y="104" font-family="'Inter'" font-size="10" fill="#FCE9ED">Earned through tournament ranks and daily gaming streaks</text>
+    
+    <g transform="translate(20, 116)">
+      <rect width="130" height="22" rx="11" fill="#140206" opacity="0.6"/>
+      <text x="65" y="15" font-family="'Inter'" font-weight="700" font-size="9" fill="#00E676" text-anchor="middle">★ LEVEL 14 MASTER</text>
+    </g>
+  </g>
+
+  <!-- Non-monetary Disclaimer Box -->
+  <g transform="translate(20, 262)">
+    <rect width="320" height="48" rx="10" fill="#241E1E" stroke="#4A3438"/>
+    <circle cx="22" cy="24" r="8" fill="#FF9100"/>
+    <text x="22" y="28" font-family="'Inter'" font-weight="900" font-size="10" fill="#1C1C1C" text-anchor="middle">!</text>
+    <text x="38" y="21" font-family="'Inter'" font-weight="700" font-size="10" fill="#FFE082">Non-Monetary Virtual Currency</text>
+    <text x="38" y="36" font-family="'Inter'" font-size="9" fill="#A89B9D">Virtual coins have no cash value and cannot be withdrawn.</text>
+  </g>
+
+  <!-- Daily Check-in Streak -->
+  <g transform="translate(20, 326)">
+    <text x="0" y="16" font-family="'Sora'" font-weight="800" font-size="14" fill="#FFFFFF">Daily Streak Rewards</text>
+    <g transform="translate(0, 26)">
+      <rect width="320" height="68" rx="12" fill="#242024" stroke="#363038"/>
+      <!-- Days dots -->
+      <!-- Day 1-4 completed -->
+      <g transform="translate(18, 14)">
+        <circle cx="12" cy="12" r="12" fill="#C6283D"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">✓</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D1</text>
+      </g>
+      <g transform="translate(60, 14)">
+        <circle cx="12" cy="12" r="12" fill="#C6283D"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">✓</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D2</text>
+      </g>
+      <g transform="translate(102, 14)">
+        <circle cx="12" cy="12" r="12" fill="#C6283D"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">✓</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D3</text>
+      </g>
+      <g transform="translate(144, 14)">
+        <circle cx="12" cy="12" r="12" fill="#C6283D"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle">✓</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D4</text>
+      </g>
+      <!-- Day 5 Active -->
+      <g transform="translate(186, 14)">
+        <circle cx="12" cy="12" r="12" fill="#FFB300" stroke="#FFE082" stroke-width="2"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="800" font-size="9" fill="#1A1A1A" text-anchor="middle">+50</text>
+        <text x="12" y="36" font-family="'Inter'" font-weight="700" font-size="8" fill="#FFB300" text-anchor="middle">Today</text>
+      </g>
+      <!-- Day 6 & 7 locked -->
+      <g transform="translate(228, 14)">
+        <circle cx="12" cy="12" r="12" fill="#2E2832"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="600" font-size="8" fill="#888898" text-anchor="middle">+75</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D6</text>
+      </g>
+      <g transform="translate(270, 14)">
+        <circle cx="12" cy="12" r="12" fill="#2E2832"/>
+        <text x="12" y="16" font-family="'Inter'" font-weight="600" font-size="8" fill="#888898" text-anchor="middle">+150</text>
+        <text x="12" y="36" font-family="'Inter'" font-size="8" fill="#888898" text-anchor="middle">D7</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Activity History -->
+  <g transform="translate(20, 442)">
+    <text x="0" y="16" font-family="'Sora'" font-weight="800" font-size="14" fill="#FFFFFF">Recent Milestones</text>
+    
+    <!-- Item 1 -->
+    <g transform="translate(0, 26)">
+      <rect width="320" height="52" rx="10" fill="#242024" stroke="#332C34"/>
+      <circle cx="26" cy="26" r="12" fill="#1C382A"/>
+      <polygon points="26,18 29,23 34,24 30,28 31,33 26,30 21,33 22,28 18,24 23,23" fill="#00E676"/>
+      <text x="48" y="24" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Rank 2 — Apex Royale Cup</text>
+      <text x="48" y="38" font-family="'Inter'" font-size="9" fill="#888898">Today, 17:15</text>
+      <text x="306" y="30" font-family="'Sora'" font-weight="800" font-size="12" fill="#00E676" text-anchor="end">+1,200 KC</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(0, 86)">
+      <rect width="320" height="52" rx="10" fill="#242024" stroke="#332C34"/>
+      <circle cx="26" cy="26" r="12" fill="#3D2E14"/>
+      <polygon points="26,18 29,23 34,24 30,28 31,33 26,30 21,33 22,28 18,24 23,23" fill="#FFB300"/>
+      <text x="48" y="24" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Daily Login Reward Streak</text>
+      <text x="48" y="38" font-family="'Inter'" font-size="9" fill="#888898">Yesterday, 19:40</text>
+      <text x="306" y="30" font-family="'Sora'" font-weight="800" font-size="12" fill="#FFB300" text-anchor="end">+50 KC</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(0, 146)">
+      <rect width="320" height="52" rx="10" fill="#242024" stroke="#332C34"/>
+      <circle cx="26" cy="26" r="12" fill="#3B1720"/>
+      <polygon points="26,18 29,23 34,24 30,28 31,33 26,30 21,33 22,28 18,24 23,23" fill="#C6283D"/>
+      <text x="48" y="24" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Tournament Host Bonus</text>
+      <text x="48" y="38" font-family="'Inter'" font-size="9" fill="#888898">16 Nov 2026</text>
+      <text x="306" y="30" font-family="'Sora'" font-weight="800" font-size="12" fill="#FF4D64" text-anchor="end">+200 KC</text>
+    </g>
+  </g>
+
+  <!-- Bottom App Navigation Bar -->
+  <g transform="translate(0, 684)">
+    <rect width="360" height="76" fill="#18181E" stroke="#2C2C36" stroke-width="1"/>
+    <g transform="translate(42, 16)">
+      <path d="M6 14 L12 8 L18 14 V19 H14 V15 H10 V19 H6 Z" fill="#888898"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(116, 16)">
+      <polygon points="12,7 18,11 18,19 12,23 6,19 6,11" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Matches</text>
+    </g>
+    <g transform="translate(180, 16)">
+      <circle cx="0" cy="12" r="18" fill="#C6283D"/>
+      <path d="M-6 12 H6 M0 6 V18" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="0" y="32" font-family="'Inter'" font-size="9" font-weight="700" fill="#FFA3AF" text-anchor="middle">Host</text>
+    </g>
+    <!-- Coins Active -->
+    <g transform="translate(244, 16)">
+      <circle cx="12" cy="12" r="14" fill="#3A1720"/>
+      <circle cx="12" cy="12" r="8" fill="#C6283D"/>
+      <text x="12" y="15" font-family="'Inter'" font-size="8" font-weight="900" fill="#FFFFFF" text-anchor="middle">K</text>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" font-weight="700" fill="#C6283D" text-anchor="middle">Coins</text>
+    </g>
+    <g transform="translate(306, 16)">
+      <circle cx="12" cy="10" r="5" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <path d="M5 21 C5 17 8 16 12 16 C16 16 19 17 19 21" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+</svg>

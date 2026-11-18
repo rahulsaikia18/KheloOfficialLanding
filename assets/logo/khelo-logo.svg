@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <defs>
+    <linearGradient id="kgPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C6283D" />
+      <stop offset="100%" stop-color="#991B32" />
+    </linearGradient>
+    <linearGradient id="kgAccent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4D64" />
+      <stop offset="100%" stop-color="#C6283D" />
+    </linearGradient>
+    <filter id="kGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#C6283D" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Emblem Icon -->
+  <g transform="translate(6, 6)" filter="url(#kGlow)">
+    <!-- Hexagonal shield base -->
+    <path d="M24 0 L44 10 L44 34 L24 48 L4 34 L4 10 Z" fill="url(#kgPrimary)" />
+    <!-- Angular Inner facet -->
+    <path d="M24 3 L41 12 L41 32 L24 44 Z" fill="url(#kgAccent)" opacity="0.45" />
+    <!-- Stylized Modern 'K' with gaming cutouts -->
+    <path d="M16 11 H21 V22 L29 11 H35 L26 23 L36 37 H30 L21 24.5 V37 H16 Z" fill="#FFFFFF" />
+    <!-- Accent flame dot -->
+    <polygon points="24,6 27,11 24,10 21,11" fill="#FFD1D6" />
+  </g>
+  <!-- Brand Text -->
+  <text x="64" y="34" font-family="'Sora', 'Inter', sans-serif" font-weight="900" font-size="24" letter-spacing="1.5" fill="#19191D">KHELO</text>
+  <text x="65" y="47" font-family="'Inter', sans-serif" font-weight="700" font-size="9" letter-spacing="4" fill="#C6283D">OFFICIAL</text>
+  <circle cx="160" cy="44" r="2.5" fill="#C6283D" />
+</svg>

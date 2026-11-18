@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <defs>
+    <linearGradient id="ctrlBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#26262E" />
+      <stop offset="100%" stop-color="#121215" />
+    </linearGradient>
+    <linearGradient id="ctrlAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3856" />
+      <stop offset="100%" stop-color="#C6283D" />
+    </linearGradient>
+    <filter id="ctrlGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#C6283D" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#ctrlGlow)" transform="translate(10, 10)">
+    <!-- Controller Body -->
+    <path d="M45 45 C75 25, 145 25, 175 45 C195 58, 215 110, 190 145 C175 165, 150 140, 138 105 C132 90, 88 90, 82 105 C70 140, 45 165, 30 145 C5 110, 25 58, 45 45 Z" fill="url(#ctrlBody)" stroke="#3A3A46" stroke-width="2"/>
+    
+    <!-- Red Accent Top Trims / Bumpers -->
+    <path d="M50 36 C65 24, 90 22, 100 24" stroke="url(#ctrlAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M120 24 C130 22, 155 24, 170 36" stroke="url(#ctrlAccent)" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Central Touchpad / Logo area -->
+    <rect x="86" y="38" width="48" height="28" rx="6" fill="#18181D" stroke="#C6283D" stroke-width="1.5"/>
+    <!-- Glowing LED Bar -->
+    <line x1="94" y1="42" x2="126" y2="42" stroke="#FF4D64" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Mini Khelo Emblem on Controller -->
+    <polygon points="110,48 116,52 116,60 110,64 104,60 104,52" fill="url(#ctrlAccent)"/>
+
+    <!-- D-Pad (Left) -->
+    <g transform="translate(48, 62)">
+      <rect x="10" y="0" width="10" height="30" rx="3" fill="#32323D" stroke="#484856" stroke-width="1"/>
+      <rect x="0" y="10" width="30" height="10" rx="3" fill="#32323D" stroke="#484856" stroke-width="1"/>
+      <circle cx="15" cy="15" r="4" fill="#1C1C22"/>
+      <!-- D-Pad arrow highlights -->
+      <polygon points="15,3 12,7 18,7" fill="#C6283D"/>
+      <polygon points="15,27 12,23 18,23" fill="#9999A5"/>
+    </g>
+
+    <!-- Action Buttons (Right) -->
+    <g transform="translate(142, 62)">
+      <!-- North (Y/Triangle) -->
+      <circle cx="15" cy="2" r="6" fill="#32323D" stroke="#484856"/>
+      <polygon points="15,-1 12,4 18,4" fill="#FF4D64"/>
+
+      <!-- South (A/Cross) -->
+      <circle cx="15" cy="28" r="6" fill="#32323D" stroke="#484856"/>
+      <text x="15" y="31.5" font-family="'Inter'" font-size="8" font-weight="900" fill="#FFFFFF" text-anchor="middle">X</text>
+
+      <!-- West (X/Square) -->
+      <circle cx="2" cy="15" r="6" fill="#32323D" stroke="#484856"/>
+      <rect x="-0.5" y="12.5" width="5" height="5" fill="#FFE082"/>
+
+      <!-- East (B/Circle) -->
+      <circle cx="28" cy="15" r="6" fill="#32323D" stroke="#484856"/>
+      <circle cx="28" cy="15" r="2.5" fill="#C6283D"/>
+    </g>
+
+    <!-- Analog Thumbsticks -->
+    <!-- Left Thumbstick -->
+    <circle cx="80" cy="100" r="16" fill="#202028" stroke="#383844" stroke-width="2"/>
+    <circle cx="80" cy="100" r="11" fill="#2B2B36" stroke="#C6283D" stroke-width="1.5"/>
+    <circle cx="80" cy="100" r="4" fill="#18181F"/>
+
+    <!-- Right Thumbstick -->
+    <circle cx="140" cy="100" r="16" fill="#202028" stroke="#383844" stroke-width="2"/>
+    <circle cx="140" cy="100" r="11" fill="#2B2B36" stroke="#C6283D" stroke-width="1.5"/>
+    <circle cx="140" cy="100" r="4" fill="#18181F"/>
+  </g>
+</svg>

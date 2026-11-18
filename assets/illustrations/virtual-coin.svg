@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <radialGradient id="coinGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF5975" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#C6283D" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#C6283D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coinGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="35%" stop-color="#FFB300" />
+      <stop offset="70%" stop-color="#FF8F00" />
+      <stop offset="100%" stop-color="#C6283D" />
+    </linearGradient>
+    <linearGradient id="innerCoinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3E0" />
+      <stop offset="50%" stop-color="#FFA000" />
+      <stop offset="100%" stop-color="#8E0017" />
+    </linearGradient>
+    <filter id="coinShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#C6283D" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="100" cy="100" r="95" fill="url(#coinGlow)"/>
+
+  <!-- Outer Coin Rim -->
+  <g filter="url(#coinShadow)">
+    <circle cx="100" cy="100" r="68" fill="url(#coinGoldGrad)" stroke="#FFE082" stroke-width="2"/>
+    <circle cx="100" cy="100" r="61" fill="#991B32" stroke="#FFCA28" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <circle cx="100" cy="100" r="52" fill="url(#innerCoinGrad)"/>
+
+    <!-- Inset Rim bevel -->
+    <circle cx="100" cy="100" r="46" fill="#19191D" opacity="0.9"/>
+    <circle cx="100" cy="100" r="45" fill="#2A0B12"/>
+
+    <!-- Embossed Khelo Shield on Coin -->
+    <path d="M100 68 L118 76 L118 95 L100 108 L82 95 L82 76 Z" fill="url(#coinGoldGrad)"/>
+    <path d="M94 77 H98 V85 L104 77 H109 L102 86 L110 97 H105 L98 87 V97 H94 Z" fill="#FFFFFF"/>
+    
+    <!-- Stars around emblem -->
+    <path d="M100 60 L101.5 64 L105 64.5 L102.5 67 L103 71 L100 69 L97 71 L97.5 67 L95 64.5 L98.5 64 Z" fill="#FFD54F"/>
+    <circle cx="76" cy="100" r="2" fill="#FFD54F"/>
+    <circle cx="124" cy="100" r="2" fill="#FFD54F"/>
+    
+    <!-- Sub-text ribbon -->
+    <rect x="76" y="112" width="48" height="12" rx="6" fill="#C6283D"/>
+    <text x="100" y="121" font-family="'Inter', sans-serif" font-weight="900" font-size="7" fill="#FFFFFF" text-anchor="middle" letter-spacing="1.5">VIRTUAL</text>
+  </g>
+
+  <!-- Floating Sparkles -->
+  <g fill="#FFE57F">
+    <polygon points="160,50 162,56 168,58 162,60 160,66 158,60 152,58 158,56" />
+    <polygon points="40,140 41.5,145 46.5,146.5 41.5,148 40,153 38.5,148 33.5,146.5 38.5,145" opacity="0.8"/>
+    <polygon points="150,135 151,139 155,140 151,141 150,145 149,141 145,140 149,139" opacity="0.7"/>
+  </g>
+</svg>

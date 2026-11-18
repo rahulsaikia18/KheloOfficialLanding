@@ -1,0 +1,421 @@
+/* ==========================================================================
+   KHELO OFFICIAL — RESPONSIVE STYLES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Laptops & Medium Desktops (max-width: 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  .hero-grid {
+    gap: 32px;
+  }
+
+  .hero-visual-wrapper {
+    min-height: 560px;
+  }
+
+  .phone-mockup {
+    width: 270px;
+    height: 550px;
+  }
+
+  .features-grid,
+  .why-choose-grid {
+    gap: 20px;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablets & Small Laptops (max-width: 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .section-wrapper {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  /* Navigation */
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Hero Section */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 56px;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-highlights-strip {
+    margin: 0 auto;
+  }
+
+  .hero-visual-wrapper {
+    margin-top: 10px;
+    min-height: 560px;
+  }
+
+  .float-badge-1 {
+    left: 8%;
+  }
+
+  .float-badge-3 {
+    right: 8%;
+  }
+
+  /* About Section */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-feature-item {
+    justify-content: center;
+    text-align: left;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .about-visual-card {
+    padding: 30px;
+  }
+
+  /* Features & Why Grids */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Tournament Hosting */
+  .hosting-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hosting-feature-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 32px auto;
+  }
+
+  /* Virtual Rewards */
+  .rewards-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .rewards-bullet-list {
+    text-align: left;
+    max-width: 500px;
+    margin: 28px auto;
+  }
+
+  .virtual-coin-disclaimer-box {
+    text-align: left;
+    max-width: 580px;
+    margin: 28px auto 0 auto;
+  }
+
+  /* Main Download APK Section */
+  .download-hero-card {
+    grid-template-columns: 1fr;
+    padding: 40px 32px;
+    gap: 40px;
+  }
+
+  .install-guide-box {
+    padding: 24px;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Devices (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .section-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+  }
+
+  /* Sticky Header */
+  .site-header {
+    height: 70px;
+  }
+
+  .hero-section {
+    padding-top: calc(70px + 24px);
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-highlights-strip {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  /* Hero Mockup Scaling */
+  .phone-mockup {
+    width: 260px;
+    height: 525px;
+    border-radius: 38px;
+  }
+
+  .phone-screen {
+    border-radius: 30px;
+  }
+
+  /* Floating badges on mobile: keep concise and neatly positioned */
+  .float-badge-1 {
+    top: 15px;
+    left: -10px;
+    padding: 8px 12px;
+  }
+
+  .float-badge-2 {
+    bottom: 25px;
+    left: -10px;
+    width: 150px;
+    padding: 10px;
+  }
+
+  .float-badge-3 {
+    top: 80px;
+    right: -10px;
+    padding: 8px 12px;
+  }
+
+  .float-icon-wrap {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* Features Grid Single Column */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 26px 20px;
+  }
+
+  /* How It Works Vertical Layout */
+  .steps-timeline {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .steps-timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 38px;
+    right: auto;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(180deg, var(--border-color) 0, var(--border-color) 8px, transparent 8px, transparent 16px);
+  }
+
+  .step-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .step-number-wrap {
+    margin-bottom: 0;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-badge-num {
+    font-size: 1.25rem;
+  }
+
+  /* App Showcase */
+  .showcase-carousel-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .showcase-screen-item.phone-secondary-left,
+  .showcase-screen-item.phone-secondary-right {
+    display: none; /* Hide background tilted phones on mobile, focus on primary active screen */
+  }
+
+  .showcase-screen-item.phone-primary {
+    transform: none;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .showcase-tab-btn {
+    padding: 8px 14px;
+    font-size: 0.8125rem;
+  }
+
+  /* Hosting features */
+  .hosting-feature-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* Why choose single column */
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Download APK conversion card */
+  .download-hero-card {
+    padding: 30px 20px;
+  }
+
+  .app-meta-badge-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-specs-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .download-btn-group .btn {
+    width: 100%;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 18px 18px;
+    font-size: 0.9375rem;
+  }
+
+  .faq-answer-inner {
+    padding: 0 18px 18px 18px;
+    font-size: 0.875rem;
+  }
+
+  /* Final CTA */
+  .final-cta-box {
+    padding: 40px 20px;
+  }
+
+  .final-cta-box .btn {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-legal-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .modal-card {
+    padding: 28px 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ultra Compact Mobile Screens (360px - 390px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.875rem;
+  }
+
+  .phone-mockup {
+    width: 236px;
+    height: 480px;
+    padding: 7px;
+  }
+
+  .phone-notch {
+    width: 65px;
+    height: 14px;
+  }
+
+  .float-badge-1,
+  .float-badge-3 {
+    display: none; /* remove clutter on extreme narrow screens to prevent touch interference */
+  }
+
+  .float-badge-2 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" fill="none">
+  <defs>
+    <linearGradient id="bgHostScreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B171D" />
+      <stop offset="100%" stop-color="#121014" />
+    </linearGradient>
+    <linearGradient id="createBtnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3856" />
+      <stop offset="100%" stop-color="#C6283D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="760" rx="32" fill="url(#bgHostScreen)" />
+
+  <!-- Status Bar -->
+  <g fill="#A0A0AB" font-family="'Inter'" font-size="11" font-weight="600">
+    <text x="28" y="24">18:30</text>
+    <circle cx="288" cy="20" r="3" fill="#A0A0AB"/>
+    <path d="M302 16 L310 24 H294 Z" fill="#A0A0AB"/>
+    <rect x="318" y="14" width="16" height="9" rx="2" stroke="#A0A0AB" stroke-width="1.5"/>
+    <rect x="320" y="16" width="10" height="5" fill="#C6283D"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(20, 44)">
+    <text x="0" y="24" font-family="'Sora'" font-weight="800" font-size="20" fill="#FFFFFF">Host Tournament</text>
+    <text x="0" y="42" font-family="'Inter'" font-size="11" fill="#888898">Set rules, room format and invite community</text>
+  </g>
+
+  <!-- Form Container -->
+  <g transform="translate(20, 96)">
+    <!-- Tournament Name Input -->
+    <text x="0" y="14" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Tournament Title</text>
+    <rect x="0" y="22" width="320" height="42" rx="10" fill="#242028" stroke="#3A3442"/>
+    <text x="14" y="48" font-family="'Inter'" font-size="12" fill="#FFFFFF">Friday Night Clan Rumble #4</text>
+
+    <!-- Game & Map selection -->
+    <text x="0" y="88" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Game Title &amp; Map</text>
+    <rect x="0" y="96" width="320" height="42" rx="10" fill="#242028" stroke="#3A3442"/>
+    <circle cx="20" cy="117" r="8" fill="#C6283D"/>
+    <text x="36" y="122" font-family="'Inter'" font-size="12" fill="#FFFFFF">Battle Royale Mobile • Erangel</text>
+    <path d="M296 114 L302 120 L308 114" stroke="#888898" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+    <!-- Format Selector (Solo / Duo / Squad) -->
+    <text x="0" y="162" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Match Format</text>
+    <g transform="translate(0, 172)">
+      <!-- Solo -->
+      <rect x="0" y="0" width="98" height="38" rx="8" fill="#242028" stroke="#36303E"/>
+      <text x="49" y="24" font-family="'Inter'" font-weight="600" font-size="11" fill="#888898" text-anchor="middle">Solo (100)</text>
+
+      <!-- Duo -->
+      <rect x="111" y="0" width="98" height="38" rx="8" fill="#242028" stroke="#36303E"/>
+      <text x="160" y="24" font-family="'Inter'" font-weight="600" font-size="11" fill="#888898" text-anchor="middle">Duo (50)</text>
+
+      <!-- Squad (Selected) -->
+      <rect x="222" y="0" width="98" height="38" rx="8" fill="#3D1A25" stroke="#C6283D" stroke-width="1.5"/>
+      <text x="271" y="24" font-family="'Inter'" font-weight="800" font-size="11" fill="#FF5C75" text-anchor="middle">Squad (25)</text>
+    </g>
+
+    <!-- Room Privacy & Rules -->
+    <text x="0" y="238" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Room Privacy &amp; Custom Rules</text>
+    <g transform="translate(0, 248)">
+      <rect width="320" height="74" rx="10" fill="#242028" stroke="#3A3442"/>
+      <text x="16" y="26" font-family="'Inter'" font-weight="600" font-size="12" fill="#FFFFFF">Passcode Protected Room</text>
+      <text x="16" y="44" font-family="'Inter'" font-size="10" fill="#888898">Players require invite code to enter</text>
+
+      <!-- Toggle switch (ON) -->
+      <rect x="254" y="16" width="48" height="24" rx="12" fill="#C6283D"/>
+      <circle cx="288" cy="28" r="9" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Virtual Prize Allocation -->
+    <text x="0" y="352" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF">Virtual Coin Prize Pool (Non-Monetary)</text>
+    <g transform="translate(0, 362)">
+      <rect width="320" height="54" rx="10" fill="#2A1820" stroke="#502230"/>
+      <circle cx="26" cy="27" r="12" fill="#FFB300"/>
+      <text x="26" y="32" font-family="'Sora'" font-weight="900" font-size="13" fill="#1C1C1C" text-anchor="middle">K</text>
+      
+      <text x="48" y="24" font-family="'Sora'" font-weight="800" font-size="13" fill="#FFE082">3,500 Virtual Coins</text>
+      <text x="48" y="40" font-family="'Inter'" font-size="9" fill="#FFA3AF">Distributed among Rank 1, 2, and 3</text>
+    </g>
+
+    <!-- Create Button -->
+    <g transform="translate(0, 442)">
+      <rect width="320" height="48" rx="24" fill="url(#createBtnGrad)"/>
+      <text x="160" y="30" font-family="'Sora'" font-weight="800" font-size="13" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">LAUNCH TOURNAMENT</text>
+    </g>
+  </g>
+
+  <!-- Bottom App Navigation Bar -->
+  <g transform="translate(0, 684)">
+    <rect width="360" height="76" fill="#18181E" stroke="#2C2C36" stroke-width="1"/>
+    <!-- Host Active -->
+    <g transform="translate(42, 16)">
+      <path d="M6 14 L12 8 L18 14 V19 H14 V15 H10 V19 H6 Z" fill="#888898"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(116, 16)">
+      <polygon points="12,7 18,11 18,19 12,23 6,19 6,11" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Matches</text>
+    </g>
+    <g transform="translate(180, 16)">
+      <circle cx="0" cy="12" r="18" fill="#FFFFFF"/>
+      <path d="M-6 12 H6 M0 6 V18" stroke="#C6283D" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="0" y="32" font-family="'Inter'" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">Host</text>
+    </g>
+    <g transform="translate(244, 16)">
+      <circle cx="12" cy="12" r="8" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="15" font-family="'Inter'" font-size="8" font-weight="800" fill="#888898" text-anchor="middle">K</text>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Coins</text>
+    </g>
+    <g transform="translate(306, 16)">
+      <circle cx="12" cy="10" r="5" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <path d="M5 21 C5 17 8 16 12 16 C16 16 19 17 19 21" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+</svg>

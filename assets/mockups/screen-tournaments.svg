@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 760" fill="none">
+  <defs>
+    <linearGradient id="bgTour" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A22" />
+      <stop offset="100%" stop-color="#101014" />
+    </linearGradient>
+    <linearGradient id="tCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242430" />
+      <stop offset="100%" stop-color="#1A1A24" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="360" height="760" rx="32" fill="url(#bgTour)" />
+
+  <!-- Status Bar -->
+  <g fill="#A0A0AB" font-family="'Inter'" font-size="11" font-weight="600">
+    <text x="28" y="24">18:30</text>
+    <circle cx="288" cy="20" r="3" fill="#A0A0AB"/>
+    <path d="M302 16 L310 24 H294 Z" fill="#A0A0AB"/>
+    <rect x="318" y="14" width="16" height="9" rx="2" stroke="#A0A0AB" stroke-width="1.5"/>
+    <rect x="320" y="16" width="10" height="5" fill="#C6283D"/>
+  </g>
+
+  <!-- Top Navigation -->
+  <g transform="translate(20, 44)">
+    <text x="0" y="24" font-family="'Sora'" font-weight="800" font-size="20" fill="#FFFFFF">Discover Matches</text>
+    <!-- Filter Icon -->
+    <rect x="280" y="2" width="40" height="32" rx="10" fill="#282836" stroke="#3D3D4E"/>
+    <path d="M292 12 H308 M295 18 H305 M298 24 H302" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Search Bar -->
+  <g transform="translate(20, 92)">
+    <rect width="320" height="42" rx="12" fill="#242430" stroke="#363646"/>
+    <circle cx="24" cy="21" r="6" stroke="#888898" stroke-width="1.5" fill="none"/>
+    <line x1="28" y1="25" x2="33" y2="30" stroke="#888898" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="44" y="25" font-family="'Inter'" font-size="12" fill="#777788">Search tournament, host or map...</text>
+  </g>
+
+  <!-- Filter Tabs -->
+  <g transform="translate(20, 150)">
+    <rect x="0" y="0" width="76" height="30" rx="15" fill="#C6283D"/>
+    <text x="38" y="19" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFFFFF" text-anchor="middle">All (24)</text>
+
+    <rect x="84" y="0" width="76" height="30" rx="15" fill="#242430" stroke="#343444"/>
+    <text x="122" y="19" font-family="'Inter'" font-weight="600" font-size="11" fill="#B0B0BE" text-anchor="middle">Live Now</text>
+
+    <rect x="168" y="0" width="76" height="30" rx="15" fill="#242430" stroke="#343444"/>
+    <text x="206" y="19" font-family="'Inter'" font-weight="600" font-size="11" fill="#B0B0BE" text-anchor="middle">Upcoming</text>
+
+    <rect x="252" y="0" width="68" height="30" rx="15" fill="#242430" stroke="#343444"/>
+    <text x="286" y="19" font-family="'Inter'" font-weight="600" font-size="11" fill="#B0B0BE" text-anchor="middle">Custom</text>
+  </g>
+
+  <!-- Matches Cards -->
+  <g transform="translate(20, 196)">
+    <!-- Tournament 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="320" height="142" rx="16" fill="url(#tCardGrad)" stroke="#38384A"/>
+      <rect x="0" y="0" width="320" height="4" rx="2" fill="#C6283D"/>
+      
+      <rect x="16" y="16" width="60" height="20" rx="6" fill="#3D121B"/>
+      <text x="46" y="30" font-family="'Inter'" font-size="9" font-weight="800" fill="#FF5C75" text-anchor="middle">SQUAD</text>
+      
+      <text x="86" y="30" font-family="'Inter'" font-size="10" fill="#888898">Hosted by <tspan fill="#FFFFFF" font-weight="600">ApexGamer</tspan></text>
+      
+      <text x="16" y="58" font-family="'Sora'" font-weight="800" font-size="15" fill="#FFFFFF">Champions Trophy 2026</text>
+      <text x="16" y="76" font-family="'Inter'" font-size="11" fill="#A0A0B0">Map: Erangel • Perspective: TPP</text>
+      
+      <line x1="16" y1="92" x2="304" y2="92" stroke="#2C2C3A"/>
+
+      <!-- Slots & Entry -->
+      <text x="16" y="114" font-family="'Inter'" font-size="10" fill="#888898">Slots:</text>
+      <text x="48" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#00E676">94/100</text>
+
+      <text x="120" y="114" font-family="'Inter'" font-size="10" fill="#888898">Prize Pool:</text>
+      <text x="178" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFE082">8,000 KC</text>
+
+      <rect x="240" y="100" width="68" height="30" rx="15" fill="#C6283D"/>
+      <text x="274" y="119" font-family="'Inter'" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">JOIN</text>
+    </g>
+
+    <!-- Tournament 2 -->
+    <g transform="translate(0, 154)">
+      <rect width="320" height="142" rx="16" fill="url(#tCardGrad)" stroke="#38384A"/>
+      <rect x="0" y="0" width="320" height="4" rx="2" fill="#FFB300"/>
+      
+      <rect x="16" y="16" width="50" height="20" rx="6" fill="#3D3012"/>
+      <text x="41" y="30" font-family="'Inter'" font-size="9" font-weight="800" fill="#FFCA28" text-anchor="middle">DUO</text>
+      
+      <text x="76" y="30" font-family="'Inter'" font-size="10" fill="#888898">Hosted by <tspan fill="#FFFFFF" font-weight="600">ViperClan</tspan></text>
+      
+      <text x="16" y="58" font-family="'Sora'" font-weight="800" font-size="15" fill="#FFFFFF">Midnight Striker Duo</text>
+      <text x="16" y="76" font-family="'Inter'" font-size="11" fill="#A0A0B0">Map: Miramar • Perspective: FPP</text>
+      
+      <line x1="16" y1="92" x2="304" y2="92" stroke="#2C2C3A"/>
+
+      <text x="16" y="114" font-family="'Inter'" font-size="10" fill="#888898">Slots:</text>
+      <text x="48" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFCA28">42/50</text>
+
+      <text x="120" y="114" font-family="'Inter'" font-size="10" fill="#888898">Prize Pool:</text>
+      <text x="178" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFE082">4,500 KC</text>
+
+      <rect x="240" y="100" width="68" height="30" rx="15" fill="#2E2E3C" stroke="#48485C"/>
+      <text x="274" y="119" font-family="'Inter'" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">DETAILS</text>
+    </g>
+
+    <!-- Tournament 3 -->
+    <g transform="translate(0, 308)">
+      <rect width="320" height="142" rx="16" fill="url(#tCardGrad)" stroke="#38384A"/>
+      <rect x="0" y="0" width="320" height="4" rx="2" fill="#7C4DFF"/>
+      
+      <rect x="16" y="16" width="50" height="20" rx="6" fill="#251A3D"/>
+      <text x="41" y="30" font-family="'Inter'" font-size="9" font-weight="800" fill="#B388FF" text-anchor="middle">SOLO</text>
+      
+      <text x="76" y="30" font-family="'Inter'" font-size="10" fill="#888898">Hosted by <tspan fill="#FFFFFF" font-weight="600">RedWolf</tspan></text>
+      
+      <text x="16" y="58" font-family="'Sora'" font-weight="800" font-size="15" fill="#FFFFFF">Survival King Battle</text>
+      <text x="16" y="76" font-family="'Inter'" font-size="11" fill="#A0A0B0">Map: Livik • Perspective: TPP</text>
+      
+      <line x1="16" y1="92" x2="304" y2="92" stroke="#2C2C3A"/>
+
+      <text x="16" y="114" font-family="'Inter'" font-size="10" fill="#888898">Slots:</text>
+      <text x="48" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#00E676">98/100</text>
+
+      <text x="120" y="114" font-family="'Inter'" font-size="10" fill="#888898">Prize Pool:</text>
+      <text x="178" y="114" font-family="'Inter'" font-weight="700" font-size="11" fill="#FFE082">3,000 KC</text>
+
+      <rect x="240" y="100" width="68" height="30" rx="15" fill="#C6283D"/>
+      <text x="274" y="119" font-family="'Inter'" font-weight="800" font-size="10" fill="#FFFFFF" text-anchor="middle">JOIN</text>
+    </g>
+  </g>
+
+  <!-- Bottom App Navigation Bar -->
+  <g transform="translate(0, 684)">
+    <rect width="360" height="76" fill="#18181E" stroke="#2C2C36" stroke-width="1"/>
+    <!-- Matches Active -->
+    <g transform="translate(42, 16)">
+      <path d="M6 14 L12 8 L18 14 V19 H14 V15 H10 V19 H6 Z" fill="#888898"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Home</text>
+    </g>
+    <g transform="translate(116, 16)">
+      <circle cx="12" cy="12" r="14" fill="#3A1720"/>
+      <polygon points="12,7 18,11 18,19 12,23 6,19 6,11" fill="#C6283D"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" font-weight="700" fill="#C6283D" text-anchor="middle">Matches</text>
+    </g>
+    <g transform="translate(180, 16)">
+      <circle cx="0" cy="12" r="18" fill="#C6283D"/>
+      <path d="M-6 12 H6 M0 6 V18" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <text x="0" y="32" font-family="'Inter'" font-size="9" font-weight="700" fill="#FFA3AF" text-anchor="middle">Host</text>
+    </g>
+    <g transform="translate(244, 16)">
+      <circle cx="12" cy="12" r="8" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="15" font-family="'Inter'" font-size="8" font-weight="800" fill="#888898" text-anchor="middle">K</text>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Coins</text>
+    </g>
+    <g transform="translate(306, 16)">
+      <circle cx="12" cy="10" r="5" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <path d="M5 21 C5 17 8 16 12 16 C16 16 19 17 19 21" stroke="#888898" stroke-width="1.5" fill="none"/>
+      <text x="12" y="32" font-family="'Inter'" font-size="9" fill="#888898" text-anchor="middle">Profile</text>
+    </g>
+  </g>
+</svg>
