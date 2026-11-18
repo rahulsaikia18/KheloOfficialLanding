@@ -1,0 +1,141 @@
+:root {
+  /* Hallmark 4px Spacing Rhythm */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+
+  /* Typography Scale */
+  --font-display: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-outlier: var(--font-body);
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-display-s: clamp(2rem, 3.5vw, 2.75rem);
+  --text-display: clamp(2.5rem, 4.5vw, 3.75rem);
+  --text-lead: clamp(1rem, 1.2vw, 1.1875rem);
+
+  /* Color Palette — Tinted Warm Red-and-White Theme */
+  --color-paper: #FAF9F7;
+  --color-paper-2: #FCFBF9;
+  --color-paper-3: #FCE9ED;
+  --color-paper-soft: #FCE9ED;
+  --color-paper-hover: #F8D8DF;
+  --color-surface: #FCFAF9;
+  --color-surface-elevated: #FEFDFC;
+  --color-about-card-bg: #F5EFF1;
+
+  /* Ink & Typography */
+  --color-ink: #202024;
+  --color-ink-2: #77777F;
+  --color-ink-muted: #9494A0;
+  --color-ink-white: #FCFAFA;
+  --color-ink-soft-red: #FFA3AF;
+
+  /* Brand Accents */
+  --color-accent: #C6283D;
+  --color-accent-hover: #D42F45;
+  --color-crimson: #991B32;
+  --color-deep-crimson: #730C1E;
+  --color-accent-ink: #FCFAFA;
+  --color-focus: #C6283D;
+
+  /* Signals & Badges */
+  --color-gold: #FFB300;
+  --color-gold-bg: #FFF8E7;
+  --color-green: #00C853;
+  --color-green-soft: #E8F5E9;
+  --color-error: #D32F2F;
+
+  /* Dark Charcoal Surfaces */
+  --color-dark-bg: #19191D;
+  --color-dark-surface: #222228;
+  --color-dark-surface-2: #2A2A34;
+  --color-dark-card: #1E1E24;
+  --color-dark-border: #32323D;
+  --color-dark-border-subtle: #25252E;
+  --color-dark-muted: #A0A0B0;
+  --color-black-pure: #121216;
+
+  /* Translucent & Component Tokens (All Lifted for Zero Literal Violations) */
+  --color-header-scrolled: rgba(250, 249, 247, 0.94);
+  --color-shadow-drawer: rgba(0, 0, 0, 0.15);
+  --color-hero-glow: rgba(198, 40, 61, 0.08);
+  --color-hero-ambient: rgba(198, 40, 61, 0.22);
+  --color-phone-shadow: rgba(18, 18, 22, 0.28);
+  --color-border-card-hover: rgba(198, 40, 61, 0.3);
+  --color-hosting-box-bg: rgba(252, 250, 250, 0.05);
+  --color-hosting-box-border: rgba(252, 250, 250, 0.1);
+  --color-hosting-box-hover: rgba(252, 250, 250, 0.09);
+  --color-hosting-box-hover-border: rgba(198, 40, 61, 0.5);
+  --color-drop-coin: rgba(198, 40, 61, 0.35);
+  --color-disclaimer-border: rgba(198, 40, 61, 0.3);
+  --color-download-card-1: rgba(34, 34, 42, 0.95);
+  --color-download-card-2: rgba(22, 22, 28, 0.95);
+  --color-icon-large-shadow: rgba(0, 0, 0, 0.4);
+  --color-specs-border: rgba(252, 250, 250, 0.1);
+  --color-install-box-bg: rgba(0, 0, 0, 0.25);
+  --color-install-box-border: rgba(252, 250, 250, 0.08);
+  --color-install-num-bg: rgba(198, 40, 61, 0.2);
+  --color-final-cta-glow: rgba(198, 40, 61, 0.22);
+  --color-final-cta-border: rgba(252, 250, 250, 0.1);
+  --color-showcase-shadow: rgba(18, 18, 22, 0.2);
+
+  /* Borders & Dividers */
+  --color-rule: #ECEAEC;
+  --color-rule-subtle: #F2F1F3;
+  --color-rule-focus: #C6283D;
+  --color-badge-border: rgba(198, 40, 61, 0.2);
+  --color-light-border: rgba(252, 250, 250, 0.12);
+  --color-dark-glow: rgba(198, 40, 61, 0.28);
+  --color-overlay: rgba(18, 18, 22, 0.5);
+
+  /* Shadows */
+  --shadow-xs: 0 2px 4px rgba(32, 32, 36, 0.04);
+  --shadow-sm: 0 4px 12px rgba(32, 32, 36, 0.06);
+  --shadow-md: 0 10px 24px rgba(32, 32, 36, 0.08);
+  --shadow-lg: 0 20px 48px rgba(18, 18, 22, 0.14);
+  --shadow-red: 0 8px 24px rgba(198, 40, 61, 0.35);
+  --shadow-red-lg: 0 16px 40px rgba(198, 40, 61, 0.45);
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --container: 1240px;
+  --gutter: 24px;
+  --nav-height: 80px;
+
+  /* Motion & Timing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-normal: 280ms;
+  --dur-slow: 480ms;
+}
+
+:disabled, [disabled], [aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: var(--color-rule);
+  color: var(--color-ink-muted);
+  border-color: var(--color-rule);
+}

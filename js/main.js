@@ -5,6 +5,9 @@
  * legal modal viewer, and accessibility helpers.
  */
 
+// Hallmark Progressive Enhancement: Mark JS as active so scroll-reveal triggers safely
+document.documentElement.classList.add("js-ready");
+
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Accessibility: Check for prefers-reduced-motion
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -24,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       {
         root: null,
-        rootMargin: "0px 0px -60px 0px",
+        rootMargin: "0px 0px -40px 0px",
         threshold: 0.12
       }
     );
@@ -56,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showcaseScreens.forEach((screen) => {
           if (screen.id === targetScreenId) {
             screen.classList.add("active");
+            screen.style.display = "";
           } else {
             screen.classList.remove("active");
           }
@@ -76,11 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
       content: `
         <p><strong>Last Updated: November 2026</strong></p>
         <p>Khelo Official is committed to protecting your privacy. This promotional website does not collect personal identifiers, passwords, payment details, or tracking cookies.</p>
-        <h4>1. Information Collection on this Website</h4>
+        <h3>1. Information Collection on this Website</h3>
         <p>This website serves strictly as an informational and APK distribution hub. We do not require registration, login, email submission, or payment details to browse this site or download the official Android application.</p>
-        <h4>2. In-App Data Processing</h4>
+        <h3>2. In-App Data Processing</h3>
         <p>Account registration, tournament matchmaking, in-game stats, and virtual coin balances are managed exclusively within the Khelo Official Android application. Refer to the in-app privacy settings for detailed account data controls.</p>
-        <h4>3. Security</h4>
+        <h3>3. Security</h3>
         <p>Our official APK releases are digitally signed and verified to ensure integrity and malware-free distribution. Always ensure you download only from the official domain.</p>
       `
     },
@@ -89,11 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
       content: `
         <p><strong>Last Updated: November 2026</strong></p>
         <p>By accessing this website and downloading the Khelo Official APK, you agree to these Terms and Conditions.</p>
-        <h4>1. Platform Purpose</h4>
+        <h3>1. Platform Purpose</h3>
         <p>Khelo Official is an esports tournament organizing and community platform for Android devices. This website is purely promotional and provides official APK installation packages.</p>
-        <h4>2. No Real-Money Gaming or Gambling</h4>
+        <h3>2. No Real-Money Gaming or Gambling</h3>
         <p>Khelo Official is not a gambling, betting, or real-money gaming service. Khelo Coins are strictly non-monetary virtual rewards with no cash value.</p>
-        <h4>3. User Eligibility</h4>
+        <h3>3. User Eligibility</h3>
         <p>Users must comply with applicable local laws regarding mobile video gaming and tournament participation. Tournament rules are governed by individual tournament hosts inside the mobile application.</p>
       `
     },
@@ -104,11 +108,11 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="disclaimer-callout">
           <strong>Official Notice:</strong> Khelo Coins are non-monetary digital virtual tokens intended exclusively for entertainment within the Khelo Official platform. They possess no monetary value and cannot be withdrawn, exchanged for cash, or transferred for real-world currency.
         </div>
-        <h4>1. Nature of Khelo Coins</h4>
+        <h3>1. Nature of Khelo Coins</h3>
         <p>Khelo Coins are in-app points earned through participation in eligible tournaments, daily activity streaks, and community milestones. They serve as entertainment markers and rank badges.</p>
-        <h4>2. No Cash Redemption or Withdrawal</h4>
+        <h3>2. No Cash Redemption or Withdrawal</h3>
         <p>Under no circumstances can Khelo Coins be redeemed, exchanged, refunded, or cashed out. The website and app do not provide any withdrawal, payment gateway, or financial transaction mechanism.</p>
-        <h4>3. Fair Competition</h4>
+        <h3>3. Fair Competition</h3>
         <p>Any attempt to manipulate coin counters or exploit tournament scoring through unofficial means will result in account suspension inside the Android application.</p>
       `
     },
@@ -117,11 +121,11 @@ document.addEventListener("DOMContentLoaded", () => {
       content: `
         <p><strong>Fair Play & Sportsmanship Standard</strong></p>
         <p>Khelo Official is built on mutual respect, healthy competition, and clean esports sportsmanship.</p>
-        <h4>1. Zero Tolerance for Cheating</h4>
+        <h3>1. Zero Tolerance for Cheating</h3>
         <p>Use of third-party aimbots, wallhacks, scripts, modded APKs, or unfair exploits in any tournament is strictly prohibited and permanently banned.</p>
-        <h4>2. Respectful Communication</h4>
+        <h3>2. Respectful Communication</h3>
         <p>Harassment, abusive language, hate speech, or unsportsmanlike behavior toward hosts, opponents, or community members will not be tolerated.</p>
-        <h4>3. Host Responsibilities</h4>
+        <h3>3. Host Responsibilities</h3>
         <p>Tournament hosts must establish transparent room codes, adhere to stated schedules, and uphold fair match reporting within the mobile application.</p>
       `
     }

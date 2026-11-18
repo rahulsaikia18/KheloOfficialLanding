@@ -1,13 +1,17 @@
-/* ==========================================================================
-   KHELO OFFICIAL — RESPONSIVE STYLES
-   ========================================================================== */
+/* Hallmark · shape: Stage · genre: modern-minimal · theme: custom · job: join · idea: "Play together, compete better, and host custom tournaments on Android" · vibe: "esports energy, tactile red-and-white clarity, crisp mobile frames"
+ * paper: oklch(98% 0.005 60) · accent: oklch(52% 0.22 25) · display: Sora · body: Inter · hero: headline, actions and mobile frame with mass · nav: edge-aligned · footer: masthead
+ * axes: light/geometric-sans/chromatic-red · posture: restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 · weakest: H, tuned hero headline to seven words without eyebrow */
+/* waive: 47b (illustrative mobile app preview mockups for user APK download preview) */
+
+@import url('../tokens.css');
 
 /* --------------------------------------------------------------------------
    Laptops & Medium Desktops (max-width: 1199px)
    -------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
   .hero-grid {
-    gap: 32px;
+    gap: var(--space-xl);
   }
 
   .hero-visual-wrapper {
@@ -15,18 +19,18 @@
   }
 
   .phone-mockup {
-    width: 270px;
-    height: 550px;
+    width: 272px;
+    height: 552px;
   }
 
   .features-grid,
   .why-choose-grid {
-    gap: 20px;
+    gap: var(--space-md);
   }
 
   .footer-top-grid {
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 1fr));
+    gap: var(--space-xl);
   }
 }
 
@@ -35,8 +39,8 @@
    -------------------------------------------------------------------------- */
 @media (max-width: 991px) {
   .section-wrapper {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: var(--space-3xl);
+    padding-bottom: var(--space-3xl);
   }
 
   /* Navigation */
@@ -50,14 +54,9 @@
 
   /* Hero Section */
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
-    gap: 56px;
-  }
-
-  .hero-badge {
-    margin-left: auto;
-    margin-right: auto;
+    gap: var(--space-2xl);
   }
 
   .hero-subtitle {
@@ -74,7 +73,7 @@
   }
 
   .hero-visual-wrapper {
-    margin-top: 10px;
+    margin-top: var(--space-xs);
     min-height: 560px;
   }
 
@@ -88,8 +87,8 @@
 
   /* About Section */
   .about-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2xl);
     text-align: center;
   }
 
@@ -105,65 +104,65 @@
   }
 
   .about-visual-card {
-    padding: 30px;
+    padding: var(--space-xl);
   }
 
   /* Features & Why Grids */
   .features-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .why-choose-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   /* Tournament Hosting */
   .hosting-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2xl);
     text-align: center;
   }
 
   .hosting-feature-list {
     text-align: left;
     max-width: 600px;
-    margin: 32px auto;
+    margin: var(--space-xl) auto;
   }
 
   /* Virtual Rewards */
   .rewards-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-xl);
     text-align: center;
   }
 
   .rewards-bullet-list {
     text-align: left;
     max-width: 500px;
-    margin: 28px auto;
+    margin: var(--space-lg) auto;
   }
 
   .virtual-coin-disclaimer-box {
     text-align: left;
     max-width: 580px;
-    margin: 28px auto 0 auto;
+    margin: var(--space-lg) auto 0 auto;
   }
 
   /* Main Download APK Section */
   .download-hero-card {
-    grid-template-columns: 1fr;
-    padding: 40px 32px;
-    gap: 40px;
+    grid-template-columns: minmax(0, 1fr);
+    padding: var(--space-xl) var(--space-lg);
+    gap: var(--space-xl);
   }
 
   .install-guide-box {
-    padding: 24px;
+    padding: var(--space-lg);
   }
 
   /* Footer */
   .footer-top-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-xl);
   }
 }
 
@@ -172,41 +171,36 @@
    -------------------------------------------------------------------------- */
 @media (max-width: 767px) {
   .section-wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
   }
 
   .container {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
   }
 
   .section-title {
-    font-size: 1.875rem;
-  }
-
-  /* Sticky Header */
-  .site-header {
-    height: 70px;
+    font-size: var(--text-2xl);
   }
 
   .hero-section {
-    padding-top: calc(70px + 24px);
-    padding-bottom: 50px;
+    padding-top: calc(var(--nav-height) + var(--space-md));
+    padding-bottom: var(--space-2xl);
   }
 
   .hero-title {
-    font-size: 2.25rem;
+    font-size: var(--text-3xl);
   }
 
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: var(--text-md);
   }
 
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
-    gap: 12px;
+    gap: var(--space-sm);
   }
 
   .hero-cta-group .btn {
@@ -214,39 +208,38 @@
   }
 
   .hero-highlights-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     width: 100%;
   }
 
   /* Hero Mockup Scaling */
   .phone-mockup {
-    width: 260px;
-    height: 525px;
-    border-radius: 38px;
+    width: 256px;
+    height: 520px;
+    border-radius: 36px;
   }
 
   .phone-screen {
-    border-radius: 30px;
+    border-radius: 28px;
   }
 
-  /* Floating badges on mobile: keep concise and neatly positioned */
   .float-badge-1 {
-    top: 15px;
-    left: -10px;
-    padding: 8px 12px;
+    top: var(--space-sm);
+    left: -8px;
+    padding: var(--space-xs) var(--space-sm);
   }
 
   .float-badge-2 {
-    bottom: 25px;
-    left: -10px;
-    width: 150px;
-    padding: 10px;
+    bottom: var(--space-lg);
+    left: -8px;
+    width: 144px;
+    padding: var(--space-xs);
   }
 
   .float-badge-3 {
-    top: 80px;
-    right: -10px;
-    padding: 8px 12px;
+    top: 72px;
+    right: -8px;
+    padding: var(--space-xs) var(--space-sm);
   }
 
   .float-icon-wrap {
@@ -256,18 +249,18 @@
 
   /* Features Grid Single Column */
   .features-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-md);
   }
 
   .feature-card {
-    padding: 26px 20px;
+    padding: var(--space-lg) var(--space-md);
   }
 
   /* How It Works Vertical Layout */
   .steps-timeline {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-xl);
   }
 
   .steps-timeline::before {
@@ -277,14 +270,14 @@
     right: auto;
     width: 2px;
     height: 100%;
-    background: repeating-linear-gradient(180deg, var(--border-color) 0, var(--border-color) 8px, transparent 8px, transparent 16px);
+    background: repeating-linear-gradient(180deg, var(--color-rule) 0, var(--color-rule) 8px, transparent 8px, transparent 16px);
   }
 
   .step-card {
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
-    gap: 20px;
+    gap: var(--space-md);
   }
 
   .step-number-wrap {
@@ -295,45 +288,45 @@
   }
 
   .step-badge-num {
-    font-size: 1.25rem;
+    font-size: var(--text-xl);
   }
 
   /* App Showcase */
   .showcase-carousel-wrapper {
     flex-direction: column;
-    gap: 30px;
+    gap: var(--space-xl);
   }
 
   .showcase-screen-item.phone-secondary-left,
   .showcase-screen-item.phone-secondary-right {
-    display: none; /* Hide background tilted phones on mobile, focus on primary active screen */
+    display: none;
   }
 
   .showcase-screen-item.phone-primary {
     transform: none;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 40px var(--color-showcase-shadow);
   }
 
   .showcase-tab-btn {
-    padding: 8px 14px;
-    font-size: 0.8125rem;
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-xs);
   }
 
   /* Hosting features */
   .hosting-feature-list {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-sm);
   }
 
   /* Why choose single column */
   .why-choose-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-md);
   }
 
   /* Download APK conversion card */
   .download-hero-card {
-    padding: 30px 20px;
+    padding: var(--space-lg) var(--space-md);
   }
 
   .app-meta-badge-row {
@@ -342,8 +335,8 @@
   }
 
   .app-specs-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-sm);
   }
 
   .download-btn-group .btn {
@@ -352,18 +345,18 @@
 
   /* FAQ */
   .faq-question {
-    padding: 18px 18px;
-    font-size: 0.9375rem;
+    padding: var(--space-md) var(--space-md);
+    font-size: var(--text-sm);
   }
 
   .faq-answer-inner {
-    padding: 0 18px 18px 18px;
-    font-size: 0.875rem;
+    padding: 0 var(--space-md) var(--space-md) var(--space-md);
+    font-size: var(--text-xs);
   }
 
   /* Final CTA */
   .final-cta-box {
-    padding: 40px 20px;
+    padding: var(--space-xl) var(--space-md);
   }
 
   .final-cta-box .btn {
@@ -372,50 +365,50 @@
 
   /* Footer */
   .footer-top-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-xl);
   }
 
   .footer-legal-bar {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
+    gap: var(--space-xs);
   }
 
   .modal-card {
-    padding: 28px 20px;
+    padding: var(--space-lg) var(--space-md);
   }
 }
 
 /* --------------------------------------------------------------------------
-   Ultra Compact Mobile Screens (360px - 390px)
+   Ultra Compact Mobile Screens (360px - 380px)
    -------------------------------------------------------------------------- */
 @media (max-width: 380px) {
   .hero-title {
-    font-size: 1.875rem;
+    font-size: var(--text-2xl);
   }
 
   .phone-mockup {
-    width: 236px;
+    width: 232px;
     height: 480px;
-    padding: 7px;
+    padding: var(--space-2xs);
   }
 
   .phone-notch {
-    width: 65px;
-    height: 14px;
+    width: 64px;
+    height: 12px;
   }
 
   .float-badge-1,
   .float-badge-3 {
-    display: none; /* remove clutter on extreme narrow screens to prevent touch interference */
+    display: none;
   }
 
   .float-badge-2 {
     left: 50%;
     transform: translateX(-50%);
-    bottom: -15px;
-    width: 200px;
+    bottom: -16px;
+    width: 192px;
   }
 }
